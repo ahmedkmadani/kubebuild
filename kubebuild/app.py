@@ -170,7 +170,7 @@ def init():
 
 @app.command("deploy")
 def deploy():
-    yaml_files = [f for f in os.listdir() if f.endswith(".yaml")]
+    yaml_files = [f for f in os.listdir() if f.endswith(".yml")]
 
     if not yaml_files:
         rprint("[red]No YAML files found in the current directory.[/red]")

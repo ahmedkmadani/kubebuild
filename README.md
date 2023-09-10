@@ -28,7 +28,11 @@ Example:
 ```bash
 kubebuild init
 ```
+### Screenshot 📷:
 
+![Kubebuild init](images/kubebuild_init.png)
+
+-----
 ### KubeBuild deploy  🚢
 
 The deploy command allows you to deploy previously generated Kubernetes YAML files into your Kubernetes cluster. It lists available YAML files in the current directory and lets you choose which one to deploy.
@@ -39,6 +43,12 @@ Example:
 kubebuild deploy
 ```
 
+### Screenshot 📷:
+
+![Kubebuild deploy](images/kubebuild_deploy.png)
+
+-----
+
 ### KubeBuild version 📌
 The version command displays the current version of KubeBuild.
 
@@ -47,6 +57,9 @@ Example:
 ```bash
 kubebuild version
 ```
+### Screenshot 📷:
+
+![Kubebuild version](images/kubebuild_version.png)
 
 ### Feedback and Contributions 🤝
 KubeBuild is an open-source project, and we welcome contributions and feedback from the community. Feel free to report issues, suggest improvements, or contribute to the project on GitHub: KubeBuild GitHub Repository.
