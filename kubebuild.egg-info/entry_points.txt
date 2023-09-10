@@ -1,0 +1,2 @@
+[console_scripts]
+kubebuild = kubebuild.app:app
