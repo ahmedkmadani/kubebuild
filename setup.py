@@ -3,6 +3,10 @@ from setuptools import setup, find_packages
 setup(
     name="kubebuild",
     version="0.0.1",
+    description='Kubebuild - Kubernetes YAML Generator and Deployment Tool',
+    author="Ahmed K. Madani",
+    author_email="ahmedk.madani@outlook.com",
+    url="https://github.com/ahmedkmadani/kubebuild.git",
     packages=find_packages(),
     install_requires=[
         "typer==0.9.0",
