@@ -1,18 +1,17 @@
 import typer
 import subprocess
-import yaml
 from PyInquirer import prompt, Separator
 from rich import print as rprint
-from resource.deployment import Deployment, DeploymentUserInput
-from resource.namespace import Namespace, NamespaceUserInput
-from resource.service import Service, ServiceUserInput
-from resource.ingress import Ingress, IngressUserInput
-from resource.configmap import ConfigMap, ConfigMapUserInput
-from resource.secret import Secret, SecretUserInput
-from resource.volume import create_volume_yaml
-from resource.pvc import create_pvc_yaml
+from kubebuild.resource.deployment import Deployment, DeploymentUserInput
+from kubebuild.resource.namespace import Namespace, NamespaceUserInput
+from kubebuild.resource.service import Service, ServiceUserInput
+from kubebuild.resource.ingress import Ingress, IngressUserInput
+from kubebuild.resource.configmap import ConfigMap, ConfigMapUserInput
+from kubebuild.resource.secret import Secret, SecretUserInput
+from kubebuild.resource.volume import create_volume_yaml
+from kubebuild.resource.pvc import create_pvc_yaml
 import os
-from constant.resource_names import ResourceNames
+from kubebuild.constant.resource_names import ResourceNames
 
 app = typer.Typer()
 
