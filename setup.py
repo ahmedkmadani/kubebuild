@@ -1,19 +1,24 @@
 from setuptools import setup, find_packages
 
+# Open the README.md file and convert it to reST format
+with open("README.md", "r") as readme_file:
+    long_description = readme_file.read()
+
 setup(
     name="kubebuild",
-    version="0.0.1",
+    version="1.1.0",
     description='Kubebuild - Kubernetes YAML Generator and Deployment Tool',
-    long_description=open("README.md").read(),
+    long_description=long_description,
+    long_description_content_type="text/markdown",  # Specify that the description is in Markdown format
     author="Ahmed K. Madani",
     author_email="ahmedk.madani@outlook.com",
     url="https://github.com/ahmedkmadani/kubebuild.git",
     packages=find_packages(),
     install_requires=[
-        "typer==0.9.0",
-        "PyInquirer==1.0.3",
-        "PyYAML==6.0.1",
-        "rich==13.5.2",
+        "typer",
+        "PyInquirer",
+        "PyYAML",
+        "rich",
     ],
     entry_points={
         'console_scripts': [

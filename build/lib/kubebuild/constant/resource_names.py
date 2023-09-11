@@ -1,0 +1,12 @@
+class ResourceNames:
+    NAMESPACE = "Namespace"
+    DEPLOYMENT = "Deployment"
+    SERVICE = "Service"
+    INGRESS = "Ingress"
+    CONFIGMAP = "ConfigMap"
+    SECRET = "Secret"
+    VOLUME = "Volume"
+    PERSISTENT_VOLUME_CLAIM = "Persistent Volume Claim (PVC)"
+    STATEFULSET = "StatefulSet"
+    DAEMONSET = "DaemonSet"
+    CRONJOB = "CronJob"
